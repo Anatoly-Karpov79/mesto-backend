@@ -2,6 +2,7 @@ const allowedCors = [
   'http://akarpov.mesto.nomoredomains.rocks',
   'https://akarpov.mesto.nomoredomains.rocks',
   'http://localhost:3000',
+  'http://localhost:3000/'
   'https://localhost:3000',
   'https://anatoly-karpov79.github.io',
   'https://192.168.0.158:3000',
