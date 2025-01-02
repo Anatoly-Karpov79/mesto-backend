@@ -121,7 +121,7 @@ module.exports.login = (req, res, next) => {
   return User.findUserByCredentials(email, password)
     .then((user) => {
       const token = jwt.sign({ _id: user._id }, 'some-secret-key');
-      res.send({ token }, user.toJSON());
+      res.send({ token });
     
     })
     .catch(next);
