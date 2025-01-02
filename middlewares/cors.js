@@ -2,7 +2,7 @@ const allowedCors = [
   'http://akarpov.mesto.nomoredomains.rocks',
   'https://akarpov.mesto.nomoredomains.rocks',
   'http://localhost:3000',
-  'http://localhost:3000/'
+  'http://localhost:3000/',
   'https://localhost:3000',
   'https://anatoly-karpov79.github.io',
   'https://192.168.0.158:3000',
@@ -24,7 +24,7 @@ module.exports = (req, res, next) => {
     res.header('Access-Control-Allow-Methods', DEFAULT_ALLOWED_METHODS);
     res.header('Access-Control-Allow-Headers', requestHeaders);
 
-    res.end();
+   return  res.end();
   }
   next();
 };
