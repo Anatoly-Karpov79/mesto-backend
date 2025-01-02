@@ -1,7 +1,7 @@
 const allowedCors = [
  
   'http://localhost:3000',
-
+  'https://mestokarp.ru',
   'https://localhost:3000',
   'https://anatoly-karpov79.github.io',
   'https://192.168.0.158:3000',
@@ -18,6 +18,7 @@ module.exports = (req, res, next) => {
   if (allowedCors.includes(origin)) {
     res.header('Access-Control-Allow-Origin', origin);
  //   res.header('Access-Control-Allow-Credentials', true);
+   
   }
   if (method === 'OPTIONS') {
     res.header('Access-Control-Allow-Methods', DEFAULT_ALLOWED_METHODS);
